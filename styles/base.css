@@ -1058,6 +1058,7 @@ form#contactForm {
 
   .social article {
     height: 100%;
+    display: grid;
   }
 
   .socialIcons {
