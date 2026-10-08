@@ -1090,7 +1090,9 @@ form#contactForm {
   grid-template-columns: auto minmax(min-content, 580px);
 }
 
-  .form h3 {}
+  .form h3 {
+  grid-area: H;
+}
 
   .form p.formIntro {}
 
