@@ -737,6 +737,7 @@ input[type="checkbox"]:checked~span:before {
 
 .radioBtns p {
   padding-bottom: 0;
+  display: grid;
 }
 
 input[type="radio"]:first-of-type {
