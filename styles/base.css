@@ -1105,6 +1105,7 @@ form#contactForm {
     max-width: 580px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .socialIcons {
