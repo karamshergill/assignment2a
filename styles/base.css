@@ -738,6 +738,7 @@ input[type="checkbox"]:checked~span:before {
 .radioBtns p {
   padding-bottom: 0;
   display: grid;
+  grid-template-columns: repeat(3, auto);
 }
 
 input[type="radio"]:first-of-type {
