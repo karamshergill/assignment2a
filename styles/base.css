@@ -592,7 +592,9 @@ section.problem {
   grid-auto-flow: row dense;
 }
 
-.galleryWrap img[src$="_w.jpg"] {}
+.galleryWrap img[src$="_w.jpg"] {
+  grid-column-end: span 2;
+}
 
 .galleryWrap img[src$="_p.jpg"] {}
 
