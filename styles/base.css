@@ -1097,7 +1097,8 @@ form#contactForm {
   grid-template-columns: auto minmax(min-content, 580px);
   grid-template-areas:
     ". H"
-    ". P";
+    ". P"
+    ". F";
 }
 
   .form h3 {
