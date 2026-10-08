@@ -122,8 +122,9 @@ i {
   grid-row: 1 / 2;
 }
 .hero article {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
-
 .hero h1 {
   font-size: 2rem;
   text-transform: uppercase;
