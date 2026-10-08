@@ -808,9 +808,11 @@ form#contactForm {
 }
 
   .hero img {
-    margin: 0 0 0 auto;
-  }
+  margin: 0 0 0 auto;
 
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
   .hero article {
     max-width: 1000px;
   }
