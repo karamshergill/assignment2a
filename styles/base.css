@@ -827,9 +827,10 @@ form#contactForm {
 }
 
   /* ######### 10a-ii. Navigation, Large screen rules ######### */
- .navWrap {
+.navWrap {
   display: grid;
   grid-template-columns: 100px minmax(0, 1100px);
+  justify-content: center;
 }
   .navToggleLabel {
     display: none;
