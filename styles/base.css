@@ -504,6 +504,8 @@ section.problem {
 
 .action article h1 {
   margin-left: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
 }
 
 .action ul li {
