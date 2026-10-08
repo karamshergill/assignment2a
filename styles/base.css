@@ -585,7 +585,9 @@ section.problem {
   margin-bottom: 0.5rem;
 }
 
-.galleryWrap {}
+.galleryWrap {
+  display: grid;
+}
 
 .galleryWrap img[src$="_w.jpg"] {}
 
