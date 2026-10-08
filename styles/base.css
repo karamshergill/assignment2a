@@ -340,6 +340,7 @@ nav .btn:hover {
   color: #fff;
   height: 2rem;
   display: flex;
+  align-items: center;
   margin-top: 1rem;
   justify-content: center;
   text-decoration: none;
