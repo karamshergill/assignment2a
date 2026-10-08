@@ -412,7 +412,9 @@ nav .btn:hover {
   grid-template-columns: repeat(10, 1fr);
 }
 
-.teamMembers li {}
+.teamMembers li {
+  grid-row: 1 / 2;
+}
 
 .teamMembers li:nth-child(1) {}
 
