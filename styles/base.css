@@ -1094,7 +1094,9 @@ form#contactForm {
   grid-area: H;
 }
 
-  .form p.formIntro {}
+  .form p.formIntro {
+    grid-area: P;
+  }
 
   .social article {
     max-width: 580px;
