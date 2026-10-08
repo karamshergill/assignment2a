@@ -522,6 +522,7 @@ section.problem {
   border-radius: 6px 0 0 6px;
   color: #fff;
   padding-top: 1rem;
+  grid-column: 1 / 2;
   text-align: center;
   text-shadow: 1px 1px 2px #223055;
 }
