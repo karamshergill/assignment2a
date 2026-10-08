@@ -956,6 +956,7 @@ form#contactForm {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2, auto);
     padding: 0 1rem;
   }
 
