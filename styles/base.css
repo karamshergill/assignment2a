@@ -510,6 +510,7 @@ section.problem {
   border: solid 1px #dedede;
   border-radius: 6px;
   list-style-type: none;
+  display: grid;
   margin: 1rem auto;
 }
 
