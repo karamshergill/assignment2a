@@ -739,6 +739,7 @@ input[type="checkbox"]:checked~span:before {
   padding-bottom: 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 input[type="radio"]:first-of-type {
