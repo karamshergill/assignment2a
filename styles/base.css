@@ -49,7 +49,7 @@ section {
   font-size: 100%;
 }
 
-body > * {
+body>* {
   font-family: "Lato", sans-serif;
   line-height: 1.4;
 }
@@ -121,10 +121,12 @@ i {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
+
 .hero article {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 }
+
 .hero h1 {
   font-size: 2rem;
   text-transform: uppercase;
@@ -160,11 +162,12 @@ i {
   align-items: center;
   justify-content: space-between;
 }
+
 input#navToggle {
   display: none;
 }
 
-input#navToggle ~ label {
+input#navToggle~label {
   position: relative;
   padding: 0.25rem;
   width: 2rem;
@@ -172,9 +175,9 @@ input#navToggle ~ label {
   height: 2rem;
 }
 
-input#navToggle ~ label > span,
-input#navToggle ~ label > span::before,
-input#navToggle ~ label > span::after {
+input#navToggle~label>span,
+input#navToggle~label>span::before,
+input#navToggle~label>span::after {
   content: "";
   display: block;
   position: absolute;
@@ -186,30 +189,30 @@ input#navToggle ~ label > span::after {
   transition: 0.14s ease-in-out;
 }
 
-input#navToggle ~ label > span::before {
+input#navToggle~label>span::before {
   top: -0.5rem;
 }
 
-input#navToggle ~ label > span::after {
+input#navToggle~label>span::after {
   top: 0.5rem;
 }
 
-#navToggle:checked ~ label > span {
+#navToggle:checked~label>span {
   width: 0;
   background: rgba(18, 18, 18, 0);
 }
 
-#navToggle:checked ~ label > span::before {
+#navToggle:checked~label>span::before {
   transform: rotateZ(45deg);
   top: 0;
 }
 
-#navToggle:checked ~ label > span::after {
+#navToggle:checked~label>span::after {
   transform: rotateZ(-45deg);
   top: 0;
 }
 
-#navToggle:checked ~ nav {
+#navToggle:checked~nav {
   left: 0;
 }
 
@@ -273,6 +276,7 @@ nav .btn {
   justify-content: center;
   margin: auto;
 }
+
 nav .btn:hover {
   background-color: #223054;
   box-shadow: inset 0 0 5px #13b1e7;
@@ -305,6 +309,9 @@ nav .btn:hover {
 
 .tripList {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
 }
 
 .tripList li {
@@ -402,26 +409,19 @@ nav .btn:hover {
   margin: 1rem 0;
 }
 
-.teamMembers li {
-}
+.teamMembers li {}
 
-.teamMembers li:nth-child(1) {
-}
+.teamMembers li:nth-child(1) {}
 
-.teamMembers li:nth-child(2) {
-}
+.teamMembers li:nth-child(2) {}
 
-.teamMembers li:nth-child(3) {
-}
+.teamMembers li:nth-child(3) {}
 
-.teamMembers li:nth-child(4) {
-}
+.teamMembers li:nth-child(4) {}
 
-.teamMembers li:nth-child(5) {
-}
+.teamMembers li:nth-child(5) {}
 
-.teamMembers li:hover {
-}
+.teamMembers li:hover {}
 
 .teamMembers img {
   border-radius: 50%;
@@ -430,8 +430,7 @@ nav .btn:hover {
   border: solid 2px rgba(255, 255, 255, 0.8);
 }
 
-.teamMembers li:nth-child(3) img {
-}
+.teamMembers li:nth-child(3) img {}
 
 /* ############ 7. Problem ############ */
 section.problem {
@@ -444,7 +443,7 @@ section.problem {
   color: #35b1e8;
 }
 
-.problem h1 ~ p {
+.problem h1~p {
   border-left: solid 1px #dedede;
   padding-left: 1rem;
 }
@@ -474,7 +473,7 @@ section.problem {
   margin-bottom: 0.5rem;
 }
 
-.action h1 + p {
+.action h1+p {
   border-left: solid 1px #dedede;
   padding-left: 1rem;
 }
@@ -544,17 +543,13 @@ section.problem {
   margin-bottom: 0.5rem;
 }
 
-.galleryWrap {
-}
+.galleryWrap {}
 
-.galleryWrap img[src$="_w.jpg"] {
-}
+.galleryWrap img[src$="_w.jpg"] {}
 
-.galleryWrap img[src$="_p.jpg"] {
-}
+.galleryWrap img[src$="_p.jpg"] {}
 
-.galleryWrap img {
-}
+.galleryWrap img {}
 
 /* ######### 9. Footer ######### */
 footer {
@@ -567,6 +562,7 @@ footer {
   color: #fff;
   padding: 1rem 1rem 2rem;
 }
+
 .form p {
   font-weight: 300;
   padding-bottom: 1rem;
@@ -636,7 +632,7 @@ form#contactForm {
   margin: 0.25em 0 1em 0.1em;
 }
 
-.contactForm input[type="checkbox"] + label {
+.contactForm input[type="checkbox"]+label {
   display: inline-block;
   padding-top: 0;
   margin-top: 0;
@@ -655,7 +651,7 @@ form#contactForm {
   margin: 1px 0 0 -1px;
 }
 
-input[type="checkbox"]:checked ~ span:before {
+input[type="checkbox"]:checked~span:before {
   content: "\f14a";
 }
 
@@ -706,14 +702,17 @@ input[type="radio"]:first-of-type {
 .radioBtns label {
   position: relative;
 }
+
 /* hide the default radio buttons */
 .radioBtns input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
+
 /* create the on (selected) state */
-input[type="radio"]:checked ~ span:before {
-  content: "\f192"; /* unicode for fa dot circle */
+input[type="radio"]:checked~span:before {
+  content: "\f192";
+  /* unicode for fa dot circle */
 }
 
 /*  ########### Note viewers, I am going to place all of our new code for the 05_03 lecture here, in between these new code start/end comments. I will end up deleting these comments once we hvae finished. I just want you to be clear on what is different compared with what we had before :) ########### */
@@ -726,20 +725,15 @@ form#contactForm {
   margin-top: 0;
 }
 
-.contactForm div:nth-child(1) {
-}
+.contactForm div:nth-child(1) {}
 
-.contactForm div:nth-child(2) {
-}
+.contactForm div:nth-child(2) {}
 
-.contactForm div:nth-child(3) {
-}
+.contactForm div:nth-child(3) {}
 
-.contactForm div:nth-child(4) {
-}
+.contactForm div:nth-child(4) {}
 
-.contactForm div:nth-child(5) {
-}
+.contactForm div:nth-child(5) {}
 
 .contactForm div:nth-child(6) {
   margin: 1.8rem 0 0;
@@ -752,6 +746,7 @@ form#contactForm {
 .contactForm textarea {
   max-width: 100%;
 }
+
 /*  ########### NEW CODE END (05_03) ########### */
 
 /* ######### 9b. Footer > Connect ######### */
@@ -811,38 +806,41 @@ form#contactForm {
 
 /* ############ 10a. Media Query, (min-width: 700px) ############ */
 @media screen and (min-width: 700px) {
+
   /* ######### 10a-i. HERO, Large screen rules ######### */
   header.hero {
-  background: url(../images/header1_lg.jpg) no-repeat center left;
-  background-size: cover;
-  text-align: left;
+    background: url(../images/header1_lg.jpg) no-repeat center left;
+    background-size: cover;
+    text-align: left;
 
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.25fr 1fr 0.25fr;
-  align-items: center;
-}
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.25fr 1fr 0.25fr;
+    align-items: center;
+  }
 
   .hero img {
-  margin: 0 0 0 auto;
+    margin: 0 0 0 auto;
 
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
   .hero article {
-  max-width: 1000px;
+    max-width: 1000px;
 
-  grid-column: 3 / 6;
-  grid-row: 2 / 3;
-}
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+  }
 
   /* ######### 10a-ii. Navigation, Large screen rules ######### */
-.navWrap {
-  display: grid;
-  grid-template-columns: 100px minmax(0, 1100px);
-  justify-content: center;
-  height: auto;
-  align-items: normal;
-}
+  .navWrap {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 1100px);
+    justify-content: center;
+    height: auto;
+    align-items: normal;
+  }
+
   .navToggleLabel {
     display: none;
   }
@@ -851,11 +849,11 @@ form#contactForm {
     position: initial;
   }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
   nav ul li a {
     border-bottom: none;
@@ -886,25 +884,23 @@ nav ul {
   }
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
- .tripList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 1rem;
-}
+  .tripList {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 
- .trips article {
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
+  .trips article {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
 
   .trips h1 {
     margin: 0 1rem 0 0;
   }
 
   .trips p {
-  flex: 3;
-}
+    flex: 3;
+  }
 
   /* ######### 10a-iv. CTA summaries, Large screen rules ######### */
   .cta {
@@ -934,11 +930,9 @@ nav ul {
     padding: 0 1rem;
   }
 
-  .team h1 {
-  }
+  .team h1 {}
 
-  .teamMembers {
-  }
+  .teamMembers {}
 
   .team p {
     border-right: solid 1px #dedede;
@@ -958,10 +952,9 @@ nav ul {
     text-shadow: 1px 1px 2px #fff;
   }
 
-  .problem h1 ~ p,
+  .problem h1~p,
   .problem h3,
-  .problem ul {
-  }
+  .problem ul {}
 
   .problem ul {
     margin-left: 2rem;
@@ -973,11 +966,9 @@ nav ul {
   }
 
   /* ######### 10a-viii. Footer, Large screen rules ######### */
-  footer {
-  }
+  footer {}
 
-  .contact {
-  }
+  .contact {}
 
   .social h3 {
     border-bottom: none;
@@ -1005,17 +996,16 @@ nav ul {
     padding: 1rem 0 0;
   }
 }
+
 /* ############ 10b. Media Query, (min-width: 1000px) ############ */
 @media screen and (min-width: 1000px) {
+
   /* ######### 10b-i. Footer, X-Large screen rules ######### */
-  .form {
-  }
+  .form {}
 
-  .form h3 {
-  }
+  .form h3 {}
 
-  .form p.formIntro {
-  }
+  .form p.formIntro {}
 
   .social article {
     max-width: 580px;
