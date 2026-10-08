@@ -1045,8 +1045,8 @@ form#contactForm {
   /* ######### 10a-viii. Footer, Large screen rules ######### */
  footer {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
   .contact {}
 
   .social h3 {
