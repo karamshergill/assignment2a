@@ -955,6 +955,7 @@ form#contactForm {
     max-width: 1000px;
     margin: auto;
     display: grid;
+    grid-template-columns: 1fr 0.5fr;
     padding: 0 1rem;
   }
 
