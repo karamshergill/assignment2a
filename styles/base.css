@@ -997,8 +997,10 @@ form#contactForm {
   }
 
   .problem h1~p,
-  .problem h3,
-  .problem ul {}
+ .problem h3,
+.problem ul {
+  grid-column: 5 / -1;
+}
 
   .problem ul {
     margin-left: 2rem;
