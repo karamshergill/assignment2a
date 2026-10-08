@@ -1059,6 +1059,7 @@ form#contactForm {
   .social article {
     height: 100%;
     display: grid;
+    grid-template-columns: 1fr 0.5fr;
   }
 
   .socialIcons {
