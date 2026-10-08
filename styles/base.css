@@ -339,6 +339,7 @@ nav .btn:hover {
   background-color: #39bae6;
   color: #fff;
   height: 2rem;
+  display: flex;
   margin-top: 1rem;
   text-decoration: none;
 }
