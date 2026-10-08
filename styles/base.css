@@ -800,6 +800,7 @@ form#contactForm {
 
 .contactForm button {
   width: 100%;
+  display: flex;
 }
 
 .contactForm textarea {
