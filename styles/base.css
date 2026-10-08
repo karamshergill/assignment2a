@@ -798,10 +798,14 @@ form#contactForm {
 @media screen and (min-width: 700px) {
   /* ######### 10a-i. HERO, Large screen rules ######### */
   header.hero {
-    background: url(../images/header1_lg.jpg) no-repeat center left;
-    background-size: cover;
-    text-align: left;
-  }
+  background: url(../images/header1_lg.jpg) no-repeat center left;
+  background-size: cover;
+  text-align: left;
+
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0.25fr 1fr 0.25fr;
+  align-items: center;
+}
 
   .hero img {
     margin: 0 0 0 auto;
