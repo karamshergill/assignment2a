@@ -878,7 +878,8 @@ nav ul {
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
   .tripList {
-  }
+  display: grid;
+}
 
  .trips article {
   width: 90%;
