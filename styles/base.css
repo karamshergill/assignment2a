@@ -506,6 +506,7 @@ section.problem {
   margin-left: 1rem;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
+  align-items: center;
 }
 
 .action ul li {
