@@ -1074,6 +1074,7 @@ form#contactForm {
     background-color: #b6e8ff;
     color: #233156;
     padding: 1rem 0 0;
+    grid-column: 1 / -1;
   }
 }
 
