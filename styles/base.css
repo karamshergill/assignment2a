@@ -1043,7 +1043,9 @@ form#contactForm {
   }
 
   /* ######### 10a-viii. Footer, Large screen rules ######### */
-  footer {}
+ footer {
+  display: grid;
+}
 
   .contact {}
 
