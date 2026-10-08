@@ -962,7 +962,9 @@ form#contactForm {
 
   .team h1 {}
 
-  .teamMembers {}
+  .teamMembers {
+  order: 1;
+}
 
   .team p {
     border-right: solid 1px #dedede;
