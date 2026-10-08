@@ -877,9 +877,10 @@ nav ul {
   }
 
   /* ######### 10a-iiI. Trips, Large screen rules ######### */
-  .tripList {
+ .tripList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 1rem;
 }
 
  .trips article {
