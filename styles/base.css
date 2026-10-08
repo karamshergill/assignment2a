@@ -515,6 +515,7 @@ section.problem {
   list-style-type: none;
   display: grid;
   flex-basis: 48%;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: auto;
   grid-template-columns: 1fr 4fr;
   margin: 1rem auto;
