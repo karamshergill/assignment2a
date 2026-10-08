@@ -532,6 +532,8 @@ section.problem {
   background-color: #223055;
   border-radius: 0 6px 0 0;
   color: #fff;
+  align-self: start;
+  grid-column: 2 / -1;
   padding: 0.5rem 1rem;
 }
 
