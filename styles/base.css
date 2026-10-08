@@ -960,9 +960,10 @@ form#contactForm {
     padding: 0 1rem;
   }
 
- .team h1 {
+.team h1 {
   order: 2;
   grid-column: 2 / -1;
+  align-self: center;
 }
 
   .teamMembers {
