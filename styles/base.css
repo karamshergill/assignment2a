@@ -828,7 +828,8 @@ form#contactForm {
 
   /* ######### 10a-ii. Navigation, Large screen rules ######### */
   .navWrap {
-  }
+  display: grid;
+}
 
   .navToggleLabel {
     display: none;
