@@ -441,7 +441,9 @@ nav .btn:hover {
   text-align: right;
 }
 
-.teamMembers li:hover {}
+.teamMembers li:hover {
+  order: 2;
+}
 
 .teamMembers img {
   border-radius: 50%;
