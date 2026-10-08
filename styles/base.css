@@ -954,6 +954,7 @@ form#contactForm {
   .team {
     max-width: 1000px;
     margin: auto;
+    display: grid;
     padding: 0 1rem;
   }
 
