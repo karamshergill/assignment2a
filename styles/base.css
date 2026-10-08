@@ -509,6 +509,11 @@ section.problem {
   align-items: center;
 }
 
+.action ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .action ul li {
   border: solid 1px #dedede;
   border-radius: 6px;
