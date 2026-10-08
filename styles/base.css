@@ -839,7 +839,8 @@ form#contactForm {
   }
 
   nav ul {
-  }
+  display: flex;
+}
 
   nav ul li a {
     border-bottom: none;
