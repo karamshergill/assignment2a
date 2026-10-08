@@ -627,6 +627,13 @@ footer {
 form#contactForm {
   max-width: 350px;
   margin: auto;
+   grid-area: F;
+  display: grid;
+  grid-template-areas:
+    "name phone"
+    "email newsletter"
+    "button .";
+  grid-gap: 1rem;
 }
 
 .contactForm div {
