@@ -831,6 +831,7 @@ form#contactForm {
   display: grid;
   grid-template-columns: 100px minmax(0, 1100px);
   justify-content: center;
+  height: auto;
 }
   .navToggleLabel {
     display: none;
